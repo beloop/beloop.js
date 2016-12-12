@@ -1,0 +1,20 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Distributions folder
+dist
+
+# Dependency directory
+node_modules
+
+# Code coverage
+test-reports
+
+# TypeScript typings
+typings

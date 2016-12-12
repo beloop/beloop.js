@@ -1,0 +1,43 @@
+{
+  "name": "beloop.js",
+  "version": "1.0.0",
+  "description": "Frontend implementation of Beloop",
+  "main": "index.js",
+  "scripts": {
+    "clean:reports": "rm -r ./test-reports",
+    "coverage": "npm run clean:reports; istanbul cover ./run-jasmine.js && npm run remap-istanbul",
+    "remap-istanbul": "remap-istanbul -i ./test-reports/coverage/coverage.json -o ./test-reports/coverage/html-report -t html",
+    "test": "node ./run-jasmine.js",
+    "tsc": "node_modules/typescript/bin/tsc",
+    "tsc:w": "node_modules/typescript/bin/tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beloop/beloop.js.git"
+  },
+  "keywords": [],
+  "author": "Arkaitz Garro <arkaitz.garro@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beloop/beloop.js/issues"
+  },
+  "homepage": "https://github.com/beloop/beloop.js#readme",
+  "dependencies": {
+    "@types/lodash": "^4.14.43",
+    "lodash": "^4.17.2"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.5.38",
+    "cz-conventional-changelog": "^1.2.0",
+    "istanbul": "^0.4.5",
+    "jasmine": "^2.5.2",
+    "jasmine-console-reporter": "^1.2.7",
+    "remap-istanbul": "^0.7.0",
+    "typescript": "^2.1.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
