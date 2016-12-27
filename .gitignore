@@ -1,12 +1,3 @@
-# Logs
-logs
-*.log
-
-# Runtime data
-pids
-*.pid
-*.seed
-
 # Distributions folder
 dist
 
@@ -16,5 +7,5 @@ node_modules
 # Code coverage
 test-reports
 
-# TypeScript typings
-typings
+# TypeScript
+tsc
