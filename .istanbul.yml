@@ -1,5 +1,5 @@
 instrumentation:
-  root: dist
+  root: tsc
   excludes: [ '**/*.spec.js' ]
 reporting:
   dir: ./test-reports/coverage
